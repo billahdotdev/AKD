@@ -1,0 +1,182 @@
+/* src/styles/Navbar.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  z-index: 1000;
+  width: 100%;
+  padding: 0.5rem 2rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.brand-logo-svg {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  color: #333; /* This will work if the SVG has currentColor as its fill/stroke */
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  color: teal;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.bar.active:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.bar.active:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.active:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: teal;
+}
+
+.nav-links a.active {
+  color: teal;
+}
+
+.nav-links a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: teal;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.bts-button {
+  background: teal;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bts-button:hover {
+  background: #005f5f;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .brand-logo-svg {
+    width: 32px; /* Smaller size for mobile */
+    height: 32px;
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 100;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    padding: 80px 2rem;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .nav-links a.active::after {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-logo-svg {
+    width: 28px; /* Even smaller size for very small screens */
+    height: 28px;
+  }
+
+  .nav-links {
+    width: 85%;
+  }
+}
+

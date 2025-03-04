@@ -1,0 +1,181 @@
+.contact {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 9rem;
+}
+
+.contact .contact-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  animation: contactFadeIn 0.4s ease-out;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://example.com/path-to-your-denim-or-knitwear-pattern.svg");
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.contact .contact-body {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.contact .contact-text-main,
+.contact .contact-text-secondary {
+  margin: 15px 0;
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.contact .contact-text-main {
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact .thank-you-message-container {
+  padding: 15px;
+  background: #e0fff0;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .thank-you-message {
+  margin: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.contact .close-message-button {
+  font-size: 18px;
+  color: var(--primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: transform 0.3s;
+}
+
+.contact .close-message-button:hover {
+  transform: rotate(180deg);
+}
+
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact .contact-input {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  resize: none;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.contact .contact-input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.contact .send-button {
+  padding: 12px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .send-button:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+.contact .whatsapp-icon {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.contact .send-button:hover .whatsapp-icon {
+  color: #25d366;
+}
+
+@keyframes contactFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact .contact-content {
+    padding: 15px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact .contact-input {
+    height: 80px;
+  }
+
+  .contact .send-button {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact .contact-content {
+    max-width: 800px;
+  }
+}
+
