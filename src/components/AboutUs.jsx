@@ -1,4 +1,4 @@
-import "../styles/AboutUs.css"
+import "../styles/AboutUs.module.css"
 import Asked from './Asked';
 import Services from './Services';
 

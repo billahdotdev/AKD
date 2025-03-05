@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "../styles/Asked.css"
+import "../styles/Asked.module.css"
 
 const Asked = () => {
   const [activeIndex, setActiveIndex] = useState(0)

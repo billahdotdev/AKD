@@ -1,5 +1,5 @@
 import { FaTshirt, FaHandsHelping, FaShippingFast, FaClipboardCheck } from "react-icons/fa"
-import "../styles/Services.css"
+import "../styles/Services.module.css"
 import { FaAnchor, FaHand, FaL, FaPaintRoller, FaTruckMonster } from "react-icons/fa6"
 import { FactoryIcon } from "lucide-react"
 

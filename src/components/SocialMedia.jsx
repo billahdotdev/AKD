@@ -1,6 +1,6 @@
 import { FaGithub, FaXTwitter, FaLinkedin, FaPinterest, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa6"
 import logo from "../assets/akd-logo.svg"
-import "../styles/SocialMedia.css"
+import "../styles/SocialMedia.module.css"
 
 const SocialMedia = () => {
   return (

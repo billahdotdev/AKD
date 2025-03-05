@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useMemo } from "react"
-import "../styles/Products.css"
+import "../styles/Products.module.css"
 
 // Import product images
 import menDenim1 from "../assets/11.jpg"

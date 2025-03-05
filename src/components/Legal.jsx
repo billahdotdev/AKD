@@ -1,4 +1,4 @@
-import "../styles/Legal.css";
+import "../styles/Legal.module.css";
 
 
 

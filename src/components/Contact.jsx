@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "../styles/Contact.css"
+import "../styles/Contact.module.css"
 import SocialMedia from './SocialMedia';
 import Contact2 from './Contact2';
 
