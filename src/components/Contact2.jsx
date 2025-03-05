@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import "../styles/Contact2.module.css"
+import "../styles/Contact2.css"
 import {
   FaPhone,
   FaEnvelope,

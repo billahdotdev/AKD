@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Home.module.css';
+import '../styles/Home.css';
 import SocialMedia from './SocialMedia';
 import Hero from './Hero';
 import VisionMission from './VisionMission';

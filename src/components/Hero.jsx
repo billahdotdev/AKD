@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import bgImage from "../assets/hero-bg.jpg"
-import "../styles/Hero.module.css"
+import "../styles/Hero.css"
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false)

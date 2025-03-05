@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import "../styles/BehindTheScenes.module.css"
+import "../styles/BehindTheScenes.css"
 
 // Sample data structure - you can easily add more items later
 const categories = [

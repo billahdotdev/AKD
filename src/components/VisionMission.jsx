@@ -1,4 +1,4 @@
-import "../styles/VisionMission.module.css"
+import "../styles/VisionMission.css"
 
 const VisionMission = () => {
   return (

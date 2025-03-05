@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "../styles/Wcu.module.css"
+import "../styles/Wcu.css"
 
 const Wcu = () => {
   const [activeCard, setActiveCard] = useState(null)
