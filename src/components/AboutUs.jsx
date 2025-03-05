@@ -6,7 +6,7 @@ import Services from './Services';
 
 const AboutUs = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/8801724546778", "_blank")
+    window.open("https://wa.me/8801732641352", "_blank")
   }
 
   return (
