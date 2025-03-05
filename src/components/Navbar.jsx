@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import Logo from "../assets/akd-logo.svg" // Changed import syntax
-import "../styles/Navbar.module.css"
+import "../styles/Navbar.css"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
